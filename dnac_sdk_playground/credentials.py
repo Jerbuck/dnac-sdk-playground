@@ -7,7 +7,7 @@ password = None
 base_url = None
 
 class Credentials(object):
-    """Credential class containing username, password, and API baseUrl."""
+    """Credentials class containing username, password, and API baseUrl."""
     
     def __init__(self, file_path):
         file_content = self.__read_content(file_path)

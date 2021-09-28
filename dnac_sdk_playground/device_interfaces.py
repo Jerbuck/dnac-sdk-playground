@@ -9,7 +9,7 @@ devices = None
 device_count = 0
 
 class DeviceInterfaces(object):
-    """Class for all devices, all ip interfaces."""
+    """Device interfaces class for all devices, all interfaces."""
 
     def __init__(self, credentials):
         try:
