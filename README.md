@@ -6,27 +6,22 @@ To get started:
 
 ###1. Clone the repository:
 
-	```
-		$git clone https://github.com/Jerbuck/dnac-sdk-playground.git
-	``` 
+	
+	$git clone https://github.com/Jerbuck/dnac-sdk-playground.git
+	 
 
 ###2. Create a virtual environment inside the repository:
 
-	```
 	$cd dnac-sdk-playground
 	$python3 -m venv .venv
-	```
 	
 ###3. Install python requirements:
 
-	```
 	$source .venv/bin/activate
 	(.venv)$pip install -r requirements.txt
-	```
 
 ###4. After the requirements are installed, run the device_interfaces.py script:
 	
-	```
 	(.venv) DESKTOP:dnac-sdk-playground user$ .venv/bin/python device_interfaces.py
 
 	--> Username: devnetuser
@@ -93,5 +88,5 @@ To get started:
 	        Loopback0                      10.2.2.4
 	        Vlan835                        10.10.20.80
 	        Loopback0                      10.2.2.2
+	       
 	        
-	```
