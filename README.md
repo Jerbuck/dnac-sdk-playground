@@ -2,7 +2,7 @@
 
 ![example workflow](https://github.com/Jerbuck/dnac-sdk-playground/actions/workflows/python-app.yml/badge.svg)
 
-This repository serves as a playground for the dnacentersdk (DNAC Python SDK) and the Public Cisco DNA Center Always-On Sandbox. The dnacentersdk wraps available DNA Center REST API. Below is an example of a python class written to combine information from two SDK calls; one for "devices" and one for "get all interfaces," it then combines them into a single output.
+This repository serves as a playground for the dnacentersdk (DNAC Python SDK) and the Public Cisco DNA Center Always-On Sandbox. The dnacentersdk wraps available DNA Center REST API. Below is an example of a python class written to combine information from two SDK calls; one for "devices" and one for "get all interfaces," it then combines them into a single output. Each class is written in object-oriented structure and includes a unit test.
 
 The dnacentersdk can be found [here](https://github.com/Jerbuck/dnac-sdk-playground), credentials are intentionally public.
 
