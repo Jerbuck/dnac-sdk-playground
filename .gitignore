@@ -130,8 +130,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# API credentials
-.creds*
+# API credentials - these are intentionally uploaded
+#.creds*
 
 # VSCode
 .vscode/*

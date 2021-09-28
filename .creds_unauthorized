@@ -1,0 +1,5 @@
+{
+    "user":"badtestuser",
+    "pass":"password",
+    "base-url":"https://sandboxdnac.cisco.com/dna/intent/api/v1/"
+}
