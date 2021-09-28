@@ -4,33 +4,33 @@ from args_user import ArgsUser
 
 username = None
 password = None
-baseUrl = None
+base_url = None
 
 class Credentials(object):
     """Credential class containing username, password, and API baseUrl."""
     
-    def __init__(self, filePath):
-        fileContent = self.__read_content(filePath)
-        self.__read_credentials(fileContent)
+    def __init__(self, file_path):
+        file_content = self.__read_content(file_path)
+        self.__read_credentials(file_content)
 
-    def __read_content(self, filePath):
+    def __read_content(self, file_path):
         """Read the content from a file given a path."""
         try:
-            with open(filePath, "r") as file:
-                jsonData = file.read()
-                return jsonData
+            with open(file_path, "r") as file:
+                json_data = file.read()
+                return json_data
         except FileNotFoundError as exception:
             sys.exit(f"ERROR: {exception.strerror}")
 
-    def __read_credentials(self, jsonData):
+    def __read_credentials(self, json_data):
         """Read the credentials from .json data."""
         try:
-            credentials = json.loads(jsonData)
+            credentials = json.loads(json_data)
             self.username = credentials['user']
             self.password = credentials['pass']
-            self.baseUrl = credentials['base-url']
-            print(f"--> Username: {self.username}")
-            print(f"--> Base URL: {self.baseUrl}")
+            self.base_url = credentials['base-url']
+            print(f"\n--> Username: {self.username}")
+            print(f"--> Base URL: {self.base_url}")
         except Exception:
             sys.exit(f"ERROR: Bad JSON Format.")
 
