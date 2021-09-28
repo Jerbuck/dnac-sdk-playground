@@ -13,8 +13,7 @@ class Test_Credentials(unittest.TestCase):
 
     def test_valid_file_name_verify_base_url_populated(self):
         credentials = Credentials(".creds")
-        #self.assertEqual(credentials.base_url, "https://sandboxdnac.cisco.com/dna/intent/api/v1/")
-        self.fail("testing failure")
+        self.assertEqual(credentials.base_url, "https://sandboxdnac.cisco.com/dna/intent/api/v1/")
 
 if __name__ == '__main__':
     unittest.main()
