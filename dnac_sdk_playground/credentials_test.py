@@ -3,7 +3,7 @@ import unittest
 from credentials import Credentials
 
 class Test_Credentials(unittest.TestCase):
-    def test_invalid_file_name_verify_sys_exit_called(self):
+    def test_invalid_file_name_or_bad_path_verify_sys_exit_called(self):
         with self.assertRaises(SystemExit):
             credentials = Credentials("bad-path")
     

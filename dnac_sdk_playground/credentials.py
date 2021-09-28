@@ -20,7 +20,7 @@ class Credentials(object):
                 json_data = file.read()
                 return json_data
         except FileNotFoundError as exception:
-            sys.exit(f"ERROR: {exception.strerror}")
+            sys.exit(f"\nERROR: {exception.strerror}")
 
     def __read_credentials(self, json_data):
         """Read the credentials from .json data."""
