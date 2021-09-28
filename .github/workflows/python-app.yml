@@ -27,3 +27,4 @@ jobs:
     - name: Run tests with unittest
       run: |
         python dnac_sdk_playground/credentials_test.py
+        python dnac_sdk_playground/device_interfaces_test.py
