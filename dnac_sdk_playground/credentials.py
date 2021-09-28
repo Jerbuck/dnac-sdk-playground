@@ -15,17 +15,15 @@ class Credentials(object):
     def __read_content(self, filePath):
         """Read the content from a file given a path."""
         try:
-            print(f'Reading file...')
-            file = open(filePath, "r")
-            jsonData = file.read()
-            return jsonData
+            with open(filePath, "r") as file:
+                jsonData = file.read()
+                return jsonData
         except FileNotFoundError as exception:
             sys.exit(f"ERROR: {exception.strerror}")
 
     def __read_credentials(self, jsonData):
         """Read the credentials from .json data."""
         try:
-            print(f'Parsing credentials...')
             credentials = json.loads(jsonData)
             self.username = credentials['user']
             self.password = credentials['pass']
@@ -37,4 +35,4 @@ class Credentials(object):
 
 if __name__ == '__main__':
     args = ArgsUser()
-    credentials = Credentials(args.filePath)
+    credentials = Credentials("../.creds")

@@ -1,6 +1,12 @@
+
 import unittest
+import sys
 import os
-from credentials import Credentials
+
+# Update system path to dnac_sdk_playground package
+sys.path.append(os.pardir)
+sys.path.append(os.pardir + "/dnac_sdk_playground")
+from dnac_sdk_playground.credentials import Credentials
 
 class Test_Credentials(unittest.TestCase):
     def test_invalid_file_name_verify_sys_exit_called(self):
@@ -12,7 +18,7 @@ class Test_Credentials(unittest.TestCase):
             credentials = Credentials(".creds_malformed")
 
     def test_valid_file_name_verify_base_url_populated(self):
-        credentials = Credentials(".creds")
+        credentials = Credentials("../.creds")
         self.assertEqual(credentials.baseUrl, "https://sandboxdnac.cisco.com/dna/intent/api/v1/")
 
 if __name__ == '__main__':
