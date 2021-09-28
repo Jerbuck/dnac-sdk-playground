@@ -8,6 +8,7 @@ baseUrl = None
 
 class Credentials(object):
     """Credential class containing username, password, and API baseUrl."""
+    
     def __init__(self, filePath):
         fileContent = self.__read_content(filePath)
         self.__read_credentials(fileContent)
@@ -29,10 +30,10 @@ class Credentials(object):
             self.password = credentials['pass']
             self.baseUrl = credentials['base-url']
             print(f"--> Username: {self.username}")
-            print(f"--> Base URL: {self.baseUrl}\n")
+            print(f"--> Base URL: {self.baseUrl}")
         except Exception:
             sys.exit(f"ERROR: Bad JSON Format.")
 
 if __name__ == '__main__':
     args = ArgsUser()
-    credentials = Credentials("../.creds")
+    credentials = Credentials(".creds")
