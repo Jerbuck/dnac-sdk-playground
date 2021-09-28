@@ -2,7 +2,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./dnac_sdk_playground_tests",
+        "./dnac_sdk_playground",
         "-p",
         "*_test.py"
     ],

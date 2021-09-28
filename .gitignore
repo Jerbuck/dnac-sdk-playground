@@ -133,5 +133,9 @@ dmypy.json
 # API credentials
 .creds*
 
-# VS Code
-.vscode/
+# VSCode
+.vscode/*
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
