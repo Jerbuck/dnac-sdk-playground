@@ -4,23 +4,23 @@ This repository serves as a playground for the dnacentersdk (DNAC Python SDK) an
 
 To get started:
 
-###1. Clone the repository:
+### 1. Clone the repository:
 
 	
 	$git clone https://github.com/Jerbuck/dnac-sdk-playground.git
 	 
 
-###2. Create a virtual environment inside the repository:
+### 2. Create a virtual environment inside the repository:
 
 	$cd dnac-sdk-playground
 	$python3 -m venv .venv
 	
-###3. Install python requirements:
+### 3. Install python requirements:
 
 	$source .venv/bin/activate
 	(.venv)$pip install -r requirements.txt
 
-###4. After the requirements are installed, run the device_interfaces.py script:
+### 4. After the requirements are installed, run the device_interfaces.py script:
 	
 	(.venv) DESKTOP:dnac-sdk-playground user$ .venv/bin/python device_interfaces.py
 
