@@ -131,4 +131,7 @@ dmypy.json
 .pyre/
 
 # API credentials
-.creds
+.creds*
+
+# VS Code
+.vscode/
