@@ -1,5 +1,11 @@
 import sys
 import json
+import os
+import sys
+
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
 
 from dnac_sdk_playground.args_user import ArgsUser
 
@@ -9,7 +15,7 @@ base_url = None
 
 class Credentials(object):
     """Credentials class containing username, password, and API baseUrl."""
-    
+
     def __init__(self, file_path):
         file_content = self.__read_content(file_path)
         self.__read_credentials(file_content)

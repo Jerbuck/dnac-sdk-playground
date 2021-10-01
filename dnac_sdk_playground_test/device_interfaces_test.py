@@ -4,7 +4,7 @@ import sys
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir) 
+sys.path.append(parentdir)
 
 from dnac_sdk_playground.device_interfaces import DeviceInterfaces
 from dnac_sdk_playground.credentials import Credentials
