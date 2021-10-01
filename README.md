@@ -12,7 +12,7 @@ The repository provides the following examples:
 * This repository uses a GitHub testrunner for CI
 * This repository displays a GitHub status badge
 
-The dnacentersdk can be found [here](https://github.com/Jerbuck/dnac-sdk-playground), credentials are intentionally public.
+The dnacentersdk can be found [here](https://github.com/cisco-en-programmability/dnacentersdk), credentials are intentionally public.
 
 <hr>
 
