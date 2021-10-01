@@ -26,5 +26,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run tests with unittest
       run: |
-        python dnac_sdk_playground/credentials_test.py
-        python dnac_sdk_playground/device_interfaces_test.py
+        python dnac_sdk_playground_test/credentials_test.py
+        python dnac_sdk_playground_test/device_interfaces_test.py
