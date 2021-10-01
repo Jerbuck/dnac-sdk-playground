@@ -9,7 +9,7 @@ class Test_DeviceInterfaces(unittest.TestCase):
             device_interfaces = DeviceInterfaces(credentials)
             self.assertEqual(device_interfaces.device_count, 0)
 
-    def test_valid_credentials_verify_device_count_greater_than_zero(self):
+    def test_valid_credentials_verify_device_count_greater_than_zero_live_dnac_sandbox(self):
         credentials = Credentials(".creds")
         device_interfaces = DeviceInterfaces(credentials)
         self.assertGreater(device_interfaces.device_count, 0)
