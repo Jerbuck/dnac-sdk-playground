@@ -1,8 +1,8 @@
 import sys
 
-from dnacentersdk.exceptions import ApiError
-from credentials import Credentials
 from dnacentersdk import api
+from dnacentersdk.exceptions import ApiError
+from dnac_sdk_playground.credentials import Credentials
 
 dnac = None
 devices = None

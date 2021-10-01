@@ -1,6 +1,7 @@
 import sys
 import json
-from args_user import ArgsUser
+
+from dnac_sdk_playground.args_user import ArgsUser
 
 username = None
 password = None

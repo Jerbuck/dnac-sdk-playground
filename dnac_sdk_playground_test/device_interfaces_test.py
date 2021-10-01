@@ -1,8 +1,15 @@
 import unittest
-from device_interfaces import DeviceInterfaces
-from credentials import Credentials
+import os
+import sys
 
-class Test_DeviceInterfaces(unittest.TestCase): 
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir) 
+
+from dnac_sdk_playground.device_interfaces import DeviceInterfaces
+from dnac_sdk_playground.credentials import Credentials
+
+class Test_DeviceInterfaces(unittest.TestCase): #TODO inherit from test_base
     def test_unauthorized_credentials_verify_sys_exit_and_device_count_equal_to_zero(self):
         with self.assertRaises(SystemExit):
             credentials = Credentials(".creds_unauthorized")
